@@ -1,0 +1,29 @@
+public class TypeCasting {
+public static void main(String[] args) {
+		
+		//Implicit Conversion
+		System.out.println("Implicit Type Casting");
+		int i=100;
+		System.out.println("Int Value: "+i);
+		
+		float f=i;
+		System.out.println("float value: "+f);
+		
+		long l=i;
+		System.out.println("Long value: "+l);
+		
+		System.out.println("\n");
+		
+		//Explicit Conversion
+		System.out.println("Explicit Type Casting");
+		
+                double a=500.0;
+		long b=(long)a;//Converting to long
+		int c=(int)a;//Converting to int
+		System.out.println("double value: "+a);
+		System.out.println("long value: "+b);
+		System.out.println("Int value: "+c);
+		
+
+	}
+}
