@@ -1,0 +1,31 @@
+
+import java.util.*;
+public class mapDemo {
+	public static void main(String[] args) {
+		// map
+		
+		//Hashmap
+		HashMap<Integer,String> hm=new HashMap<Integer,String>();      
+	      hm.put(1,"sophia");    
+	      hm.put(2,"lily");    
+	      hm.put(3,"mia");   
+	       
+	      System.out.println("\nThe elements of Hashmap are ");  
+	      for(Map.Entry m:hm.entrySet()){    
+	       System.out.println(m.getKey()+" "+m.getValue());    
+	      }
+	      
+	     //HashTable
+	       
+	      Hashtable<Integer,String> ht=new Hashtable<Integer,String>();  
+	      
+	      ht.put(1,"maya");  
+	      ht.put(2,"jony");  
+	      ht.put(3,"alice");  
+	      ht.put(4,"luna");  
+
+	      System.out.println("\nThe elements of HashTable are ");  
+	      for(Map.Entry n:ht.entrySet()){    
+	       System.out.println(n.getKey()+" "+n.getValue());    
+	      }
+	      
