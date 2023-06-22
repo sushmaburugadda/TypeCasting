@@ -1,0 +1,45 @@
+package constructor;
+class EmpInfo{
+	int salary;
+	String name;
+
+void display() {
+	System.out.println(salary+" "+name);
+	}
+}
+
+public class constructorDemo {
+	public static void main(String[] args) {
+
+		EmpInfo emp1=new EmpInfo();
+		EmpInfo emp2=new EmpInfo();
+
+		emp1.display();
+		emp2.display();
+		}
+	}
+
+	//parameterized constructor
+	class Std{
+		int salary;
+		String name;
+
+		Std(int i,String n)
+		{
+		salary=i;
+		name=n;
+		}
+
+package constructor;
+
+public class paramconstrDemo {
+	public static void main(String[] args) {
+
+		Std std1=new Std(25000,"sophia");
+		Std std2=new Std(30000,"lily");
+		Std.display();
+		Std.display());
+		}
+
+}
+
