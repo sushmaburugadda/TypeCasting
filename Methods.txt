@@ -1,0 +1,64 @@
+//Method DEMO
+public class MethodExecution {
+
+public int Addnumbers(int x,int y) {
+	int a=x+y;
+	return a;
+}
+
+public static void main(String[] args) {
+
+	MethodExecution b=new MethodExecution();
+	int ans= b.Addnumbers(40,10);
+	System.out.println("Addition is :"+ans);
+}
+}
+
+
+
+
+//Call by Value
+public class Callbyvalue {
+	int val=200;
+
+	int operation(int val) {
+		val =val-10/200;
+		return(val);
+	}
+
+	public static void main(String args[]) {
+		Callbyvalue d = new Callbyvalue();
+		System.out.println("Before operation value of data is "+d.val);
+		d.operation(200);
+		System.out.println("After operation value of data is "+d.val);
+		}
+	}
+
+
+
+//Method overloading
+public class MethodOverloading {
+public void area(int a)
+	    {
+	         System.out.println("Area of Square: "+(a*a));
+	    }
+	    public void area(int p,int q) 
+	    {
+	         System.out.println("Area of Rhombus : "+(p*q/2));
+	    }
+
+	    public static void main(String args[])
+	   {
+
+	    	MethodOverloading ob=new MethodOverloading();
+	       ob.area(10);
+	       ob.area(10,12);  
+	   }
+	}
+
+
+
+
+
+
+	
