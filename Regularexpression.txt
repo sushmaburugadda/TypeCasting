@@ -1,0 +1,15 @@
+import java.util.regex.*;
+
+public class RegularExpression {
+
+public static void main(String[] args) {
+
+	String Program = "[a-z]+";
+	String check = "Welcome to Java Basics";
+	Pattern p = Pattern.compile(Program);
+	Matcher c = p.matcher(check);
+	
+	while (c.find())
+      	System.out.println( check.substring( c.start(), c.end() ) );
+	}
+}
