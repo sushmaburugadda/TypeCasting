@@ -1,0 +1,88 @@
+public class stringdemo {
+	public static void main(String[] args) {
+		//methods of strings
+		System.out.println("String Program");
+		
+		String sl=new String("How Are you");
+		System.out.println(sl.length());
+
+		//substring
+		String sub=new String("Hello world");
+		System.out.println(sub.substring(4));
+
+		//String Comparison
+		String s1="World";
+		String s2="world";
+		System.out.println(s1.compareTo(s2));
+
+		//IsEmpty
+		String s4="";
+		System.out.println(s4.isEmpty());
+
+		//toLowerCase
+		String s5="Welcome";
+		System.out.println(s1.toLowerCase());
+		
+		//replace
+		String s6="worle";
+		String replace=s2.replace('e', 'd');
+		System.out.println(replace);
+
+		//equals
+		String x="Welcome to Basics";
+		String y="WeLcOmE tO basics";
+		System.out.println(x.equals(y));
+ 
+		System.out.println("\n");
+		System.out.println("Creating StringBuffer");
+		//Creating StringBuffer and append method
+		StringBuffer s=new StringBuffer("Welcome to Basics!");
+		s.append("Enjoy your learning");
+		System.out.println(s);
+
+		//insert method
+		s.insert(0, 'e');
+		System.out.println(s);
+
+		//replace method
+		StringBuffer sb=new StringBuffer("World");
+		sb.replace(0, 2, "WORL");
+		System.out.println(sb);
+
+		//delete method
+		sb.delete(1, 2);
+		System.out.println(sb);
+		
+		//StringBuilder
+		System.out.println("\n");
+		System.out.println("Creating StringBuilder");
+		StringBuilder sb1=new StringBuilder("welcome");
+		sb1.append("java basics");
+		System.out.println(sb1);
+
+		System.out.println(sb1.delete(1, 2));
+
+		System.out.println(sb1.insert(1, "world"));
+
+		System.out.println(sb1.reverse());
+				
+		//conversion	
+		System.out.println("\n");
+		System.out.println("Conversion of Strings to StringBuffer and StringBuilder");
+		
+		String str = "world"; 
+        
+        // conversion from String object to StringBuffer 
+        StringBuffer sbr = new StringBuffer(str); 
+        sbr.reverse(); 
+        System.out.println("String to Stringbuilder");
+        System.out.println(sbr); 
+          
+        // conversion from String object to StringBuilder 
+        StringBuilder sbl = new StringBuilder(str); 
+        sbl.append("Hello"); 
+	}
+}
+
+
+
