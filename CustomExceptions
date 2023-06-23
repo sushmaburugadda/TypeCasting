@@ -1,0 +1,102 @@
+public class ThrowDemo {
+	String str1;
+    
+        public static void main(String[] args)
+        {
+
+            int x=25,y=0,rs;
+
+            try
+            {
+                if(y==0)        
+                    throw(new ArithmeticException("Can't divide by zero."));
+                else
+                {
+                    rs = x / y;
+                    System.out.print("\n\tThe result is : " + rs);
+                }
+            }
+            catch(ArithmeticException Ex)
+            {
+                System.out.print("\n\tError : " + Ex.getMessage());
+            }
+
+            System.out.print("\n\tEnd of program.");
+        }
+    }
+
+public class ThrowsDemo {
+	
+        void Division() throws ArithmeticException
+        {
+            int x=25,y=0,rs;
+            rs = x/ y;
+            System.out.print("\n\tThe result is : " + rs);
+        }
+
+	    public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        {
+            ThrowsDemo T = new ThrowsDemo();
+             try
+            {
+                T.Division();
+            }
+            catch(ArithmeticException Ex)
+            {
+                System.out.print("\n\tError : " + Ex.getMessage());
+            }
+            System.out.print("\n\tEnd of program.");
+        }
+	}
+}
+
+
+public class FinalBlockDemo {
+    
+        public static void main(String[] args)
+        {
+            int x=25,y=0,rs=0;
+            try
+            {
+                rs = x / y;
+            }
+            catch(ArithmeticException Ex)
+            {
+                System.out.print("\n\tError : " + Ex.getMessage());
+            }
+            finally
+            {
+                System.out.print("\n\tThe result is : " + rs);
+            }
+        }
+    }
+
+
+package thread;
+class MyException extends Exception 
+{ 
+    public MyException(String s) 
+    { 
+        super(s); 
+    } 
+} 
+public class Main 
+{ 
+    public static void main(String args[]) 
+    { 
+        try
+        { 
+            throw new MyException("Hello"); 
+        } 
+        catch (MyException ex) 
+        { 
+            System.out.println("World"); 
+            System.out.println(ex.getMessage()); 
+        } 
+    } 
+}
+
+
+
+
