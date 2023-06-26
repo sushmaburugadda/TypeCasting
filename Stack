@@ -1,0 +1,22 @@
+import java.util.*;
+public class QueueDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Queue<String> FruitsQueue = new LinkedList<>();
+		                FruitsQueue.add("Apple");
+		        		FruitsQueue.add("Banana");
+		        		FruitsQueue.add("Grapes");
+		        		FruitsQueue.add("Strawberry");
+		        		FruitsQueue.add("Orange");
+		        		FruitsQueue.add("kiwi");
+		            System.out.println("Queue is : " + FruitsQueue);
+		        		System.out.println("Head of Queue : " + FruitsQueue.peek());
+		        		FruitsQueue.remove();
+		        		System.out.println("After removing Head of Queue : " + FruitsQueue);
+		        		System.out.println("Head of Queue : " + FruitsQueue.peek());
+		        		FruitsQueue.remove();
+		        		System.out.println("After removing Head of Queue : " + FruitsQueue);
+		        		System.out.println("Size of Queue : " + FruitsQueue.size());
+		    	}
+		}
