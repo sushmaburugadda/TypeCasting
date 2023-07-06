@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-;@WebServlet("/NameServlet")
+@WebServlet("/NameServlet")
 public class NameServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -23,7 +23,7 @@ public class NameServlet extends HttpServlet {
         
        PrintWriter out = response.getWriter();
        out.println("<html><body>");
-       out.println("Your full name is " + fname + " " + lname);
+       out.println("Your full name is " + fname + " "+lname  );
        out.println("</body></html>");
        response.getWriter().append("Served at: ").append(request.getContextPath());
 		
@@ -35,3 +35,5 @@ public class NameServlet extends HttpServlet {
 	}
 
 }
+
+	
