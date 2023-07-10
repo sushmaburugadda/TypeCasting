@@ -12,6 +12,5 @@ Enter Id<input type="text" name="txtId"><br>
 Enter Name<input type="text" name="txtName"><br>
 Enter Price<input type="text" name="txtPrice"><br>
 <input type="Submit">
-<a href="Search.html">Search Record</a>
 </body>
 </html>
