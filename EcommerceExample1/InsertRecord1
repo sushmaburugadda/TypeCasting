@@ -1,0 +1,54 @@
+package com.example;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/InsertRecord")
+public class InsertRecord extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public InsertRecord() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		try {
+			//Read all values from HTML Page
+			int id=Integer.parseInt(request.getParameter("txtid"));
+			String name=request.getParameter("txtName");
+			Float price=Float.parseFloat(request.getParameter("txtPrice"));
+			
+			//Call Connection Method
+			Connection con=DBConnection.getConnection();
+			//Create Statement Object
+			Statement stmt=con.createStatement();
+			//Create query
+			String query="insert into eproduct(id,sname,price) values("+id+",'"+name+"',"+price+")";
+			
+			//execute query
+			int ans=stmt.executeUpdate(query);
+			PrintWriter out=response.getWriter();
+			if(ans>0)
+				out.println("Record Inserted");
+			else
+				out.println("Record not inserted");
+			
+		}catch(Exception e) {
+			e.printStackTrace();}
+		}
+
+}
+		
