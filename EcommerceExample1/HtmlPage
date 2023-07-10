@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ecommerce</title>
+</head>
+<body>
+<a href="ViewRecord">View Record</a>
+<h1> Ecommerce Form</h1>
+<form action="InsertRecord2">
+Enter Id<input type="text" name="txtId"><br>
+Enter Name<input type="text" name="txtName"><br>
+Enter Price<input type="text" name="txtPrice"><br>
+<input type="Submit">
+<a href="Search.html">Search Record</a>
+</body>
+</html>
